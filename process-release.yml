@@ -1,0 +1,13 @@
+apps:
+  - name: api
+    script: index.js
+    instances: 1
+    watch: false
+    node_args: --max_old_space_size=8192 --icu-data-dir=./node_modules/full-icu
+    log_date_format: YYYY-MM-DDTHH:mm:ssZ
+    restart_delay: 400
+    exec_mode: cluster
+    env:
+      NODE_ENV: production
+      DEBUG: '*App:*,*base:*'
+      DEBUG_DEPTH: null

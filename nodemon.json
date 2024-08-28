@@ -1,0 +1,27 @@
+{
+  "watch": [
+    "src/**/*.ts"
+  ],
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "dist",
+    "content"
+  ],
+  "verbose": true,
+  "script": "src/index.ts",
+  "delay": 600,
+  "execMap": {
+    "ts": "node_modules/.bin/ts-node -T"
+  },
+  "env": {
+    "NODE_ICU_DATA": "./node_modules/full-icu",
+    "NODE_ENV": "development",
+    "DEBUG": "base:*",
+    "DEBUG_DEPTH": null,
+    "TS_NODE_FAST": true,
+    "NTBA_FIX_319": false,
+    "TS_NODE_TRANSPILE_ONLY": true,
+    "TS_NODE_PROJECT": "tsconfig.json"
+  }
+}

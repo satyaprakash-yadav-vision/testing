@@ -1,0 +1,35 @@
+{
+  "urlSSL": false,
+  "server": {
+    "name": "base",
+    "host": "0.0.0.0",
+    "port": 8080,
+    "url": "http://localhost:8080",
+    "bodySize_API_JSON": "5mb",
+    "bodySize_API_urlencoded": "8mb",
+    "bodySize_ADMIN_JSON": "5mb",
+    "bodySize_ADMIN_urlencoded": "8mb",
+    "defaultTimeZone": "Asia/Kolkata"
+  },
+  "debug": false,
+  "amqp": {
+    "host": "localhost",
+    "port": 5672,
+    "vhost": "/"
+  },
+  "database": {
+      "host": "localhost",
+      "port": 3306,
+      "name": "test",
+      "user": "root",
+      "password": "Satya0*123",
+      "log_sql_query": 1,
+      "debug": false
+  },
+  "JWT": {
+    "ACCESS_SECRET_KEY": "c44d434effa70e7717c74d9180cb9227",
+    "REFRESH_SECRET_KEY": "9afba49a9b5fe26cdfad3342d357a9b9",
+    "ACCESS_TOKEN_EXPIRY": "1h",
+    "REFRESH_TOKEN_EXPIRY": "30d" 
+  }
+}

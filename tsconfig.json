@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitReturns": false,
+    "allowUnreachableCode": false,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "target": "ES2021",
+    "rootDirs": [
+      "src",
+      "."
+    ],
+    "lib": [
+      "ESNext"
+    ],
+    "outDir": "dist",
+    "sourceMap": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "jsx": "react",
+    "pretty": true,
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "./src/**/*.ts"
+  ]
+}
